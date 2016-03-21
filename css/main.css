@@ -17,3 +17,59 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
+body {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+img:nth-child(2),
+img:nth-child(4) {
+  display: none;
+}
+
+@media only screen and (min-width: 25em) {
+
+  img {
+    display: inline-block;
+    text-align: center;
+    font-size: 110%;
+    width: 45%;
+  }
+
+  img:nth-child(2),
+  img:nth-child(4) {
+    display: inline-block;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  img {
+    font-size: 110%;
+    width: 31%;
+  }
+
+  img:first-child {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  img {
+    font-size: 110%;
+    width: 24%;
+    display: inline-block;
+  }
+
+  img:first-child {
+    display: inline-block;
+  }
+
+}
